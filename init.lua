@@ -174,6 +174,7 @@ vim.keymap.set('n', '<leader>w', '<cmd>w<CR>')
 vim.keymap.set('n', '<leader>q', '<cmd>q<CR>')
 vim.keymap.set({ 'n', 'v' }, '<leader>d', [["_d]])
 vim.keymap.set({ 'n', 'v' }, 'd', [["_d]])
+vim.keymap.set('n', '<leader>jq', ":%!jq '.'<CR>")
 
 vim.keymap.set('n', '<C-_>', function()
   local line_start = vim.api.nvim_win_get_cursor(0)[1] -- Get the current line

@@ -123,7 +123,6 @@ vim.opt.breakindent = true
 vim.opt.autoindent = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
->>>>>>> 3338d3920620861f8313a2745fd5d2be39f39534
 
 -- Save undo history
 vim.o.undofile = true
@@ -876,9 +875,6 @@ require('lazy').setup({
         -- See :h blink-cmp-config-keymap for defining your own keymap
         preset = 'default',
 
-          -- Scroll the documentation window [b]ack / [f]orward
-          ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-          ['<C-u>'] = cmp.mapping.scroll_docs(4),
         -- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
         --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
       },
@@ -889,11 +885,11 @@ require('lazy').setup({
         nerd_font_variant = 'mono',
       },
 
-          -- If you prefer more traditional completion keymaps,
-          -- you can uncomment the following lines
-          ['<CR>'] = cmp.mapping.confirm { select = true },
-          ['<Tab>'] = cmp.mapping.confirm { select = true },
-          --['<S-Tab>'] = cmp.mapping.select_prev_item(),
+      -- If you prefer more traditional completion keymaps,
+      -- you can uncomment the following lines
+      --['<CR>'] = cmp.mapping.confirm { select = true },
+      --['<Tab>'] = cmp.mapping.confirm { select = true },
+      --['<S-Tab>'] = cmp.mapping.select_prev_item(),
       completion = {
         -- By default, you may press `<c-space>` to show the documentation.
         -- Optionally, set `auto_show = true` to show the documentation after a delay.
